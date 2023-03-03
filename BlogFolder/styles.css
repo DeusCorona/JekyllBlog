@@ -1,8 +1,12 @@
+---
+---
+
 body,h1,h2,h3,h4
 {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
+
 a
 {
     text-decoration: none;
@@ -133,4 +137,36 @@ a
 .footerIcons:hover
 {
     color: orangered;
+}
+
+.post
+{
+    background-color: rgb(54,69,79);
+    color: wheat;
+}
+
+.postHeader
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postTitle
+{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.postMeta
+{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.postContent
+{
+    font-size: 1rem;
+    font-weight: 400;
 }
