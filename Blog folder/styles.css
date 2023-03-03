@@ -38,7 +38,12 @@ a
 
 .heroSectionTitle
 {
-    font-size: 3rem;
+    @media screen and (max-width: 480px){
+        font-size: 2.5rem;  
+    }
+    @media screen and (min-width: 481px){
+        font-size: 3rem;
+    }
     font-weight: 600;
     color: white;
 }
@@ -48,7 +53,12 @@ a
     padding: 10vw 15vw 10vw 15vw;
     background-color: rgb(54,69,79);
     color: white;
-    font-size: 1.2rem;
+    @media screen and (max-width: 480px){
+        font-size: 1rem;  
+    }
+    @media screen and (min-width: 481px){
+        font-size: 1.2rem;
+    }
     font-weight: 400;
 }
 
@@ -60,8 +70,13 @@ a
 
 .mainBlogTitle
 {
+    @media screen and (max-width: 480px){
+        font-size: 1.5rem        
+    }
+    @media screen and (min-width: 481px){
+        font-size: 2.5rem;
+    }
     color: orangered;
-    font-size: 2.5rem;
     font-weight: 600;
 }
 
