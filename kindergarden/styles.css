@@ -143,6 +143,7 @@ a
 {
     background-color: rgb(54,69,79);
     color: wheat;
+    min-height: 80vh;
 }
 
 .postHeader
@@ -156,7 +157,7 @@ a
 {
     font-size: 2rem;
     font-weight: 700;
-    padding: 5vw 5vw 5vw 5vw;
+    padding: 2vw 5vw 1vw 5vw;
 }
 
 .postMeta
@@ -171,4 +172,5 @@ a
     font-size: 1rem;
     font-weight: 400;
     padding: 5vw 5vw 5vw 5vw;
+    line-height: 1rem;
 }
