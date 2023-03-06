@@ -3,14 +3,14 @@ layout: default
 ---
 
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="bg-gray-600 text-white min-h-[80vh]" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="postHeader">
-    <h1 class="postTitle" itemprop="name headline">{{ page.title | capitalize }}</h1>
-    <p class="postMeta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  <header class="flex flex-col items-center">
+    <h1 class="text-4xl font-bold px-[5vw] pt-[2vw] pb-[1vw]" itemprop="name headline">{{ page.title | capitalize }}</h1>
+    <p class="text-xl italic font-medium"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
-  <div class="postContent" itemprop="articleBody">
+  <div class="text-xl font-medium p-[5vw]" itemprop="articleBody">
     {{ content }}
   </div>
 

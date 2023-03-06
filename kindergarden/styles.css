@@ -1,6 +1,10 @@
 ---
 ---
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body,h1,h2,h3,h4
 {
     margin: 0 0 0 0;
@@ -15,20 +19,13 @@ a
 ::selection
 {
     color:white;
-    background-color: orangered;
+    background-color: #fbbf24;
 }
 
 .font
 {
     font-family: 'Quicksand', sans-serif;
     font-family: 'Raleway', sans-serif;
-}
-
-.navbarFont
-{
-    font-size: 1rem;
-    font-weight: 500;
-    color: white;
 }
 
 .heroSection
@@ -38,139 +35,4 @@ a
     background: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0,0.7)),url("./assets/heroImage.jpg");
     background-blend-mode: darken;
     background-position: center;    
-}
-
-@media screen and (max-width: 480px){
-    .heroSectionTitle
-    {
-        font-size: 2.5rem;  
-    }  
-}
-
-@media screen and (min-width: 481px){
-    .heroSectionTitle
-    {
-        font-size: 3rem;  
-    }  
-}
-
-.heroSectionTitle
-{
-    font-weight: 600;
-    color: white;
-}
-
-@media screen and (max-width: 480px){
-    .mainBlog
-    {
-        font-size: 1rem; 
-    }  
-}
-
-@media screen and (min-width: 481px){
-    .mainBlog
-    {
-        font-size: 1.2rem;
-    }  
-}
-
-.mainBlog
-{
-    padding: 10vw 15vw 10vw 15vw;
-    background-color: rgb(54,69,79);
-    color: white;
-}
-
-.mainBlogContainer
-{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.mainBlogTitle
-{
-    color: orangered;
-    font-weight: 600;
-}
-
-@media screen and (max-width: 480px){
-    .mainBlogTitle
-    {
-        font-size: 1.5rem; 
-    }  
-}
-
-@media screen and (min-width: 481px){
-    .mainBlogTitle
-    {
-        font-size: 2.5rem;
-    }  
-}
-
-.footer
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-    padding: 5vw 20vw 5vw 20vw;
-}
-
-.footerContainer
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.footerIcons
-{
-    color:rgb(54,69,79);
-}
-
-.footerIcons:hover
-{
-    color: orangered;
-}
-
-.post
-{
-    background-color: rgb(54,69,79);
-    color: wheat;
-    min-height: 80vh;
-}
-
-.postHeader
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.postTitle
-{
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 2vw 5vw 1vw 5vw;
-}
-
-.postMeta
-{
-    font-size: 1.2rem;
-    font-style: italic;
-    font-weight: 500;
-}
-
-.postContent
-{
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 5vw 5vw 5vw 5vw;
-    line-height: 1rem;
 }
