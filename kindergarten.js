@@ -1,7 +1,7 @@
-toggle = true;
-navbarMenuButton = document.getElementById("navbar--menuButton");
-navbarCloseButton = document.getElementById("navbar--closeButton");
-navbar = document.getElementById("navbar");
+var toggle = true;
+var navbarMenuButton = document.getElementById("navbar--menuButton");
+var navbarCloseButton = document.getElementById("navbar--closeButton");
+var navbar = document.getElementById("navbar");
 navbarMenuButton.addEventListener("click",navbarToggle);
 navbarCloseButton.addEventListener("click",navbarToggle);
 
